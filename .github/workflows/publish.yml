@@ -19,7 +19,7 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: 07c359eee410bc3214c39b9ed745d1e3
           projectName: clksoftware
-          directory: .vercel/output
+          directory: .vercel/output/static
           # Optional: Enable this if you want to have GitHub Deployments triggered
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
           # Optional: Switch what branch you are publishing to.
