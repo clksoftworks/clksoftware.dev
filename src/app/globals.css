@@ -18,7 +18,24 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: #2C322B;
+  background: #2c322b;
+}
+
+.animate-underline-from-center:after {
+  display: block;
+  content: "";
+  border-bottom: solid 0.25rem currentColor;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+  border-radius: 0.25rem;
+}
+
+.animate-underline-from-center:hover:after {
+  transform: scaleX(1);
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 1);
 }
 
 @layer utilities {

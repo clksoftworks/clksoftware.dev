@@ -1,8 +1,11 @@
 import { Metadata } from "next";
 import Logo from "./components/logo";
 import Navigation from "./components/navigation";
-import Image from "next/image";
-import background from "../../public/placeholder.png";
+import Footer from "./components/footer";
+import Hero from "./components/hero";
+import ServiceList from "./components/service-list";
+import ComparisonPanel from "./components/comparison-panel";
+import CallToAction from "./components/call-to-action";
 
 export const metadata: Metadata = {
   title:
@@ -21,7 +24,15 @@ export default function Home() {
         <Navigation />
       </header>
 
-      <Image alt="Background" src={background} className="w-full" />
+      <Hero />
+
+      <CallToAction />
+
+      <ServiceList />
+
+      <ComparisonPanel />
+
+      <Footer />
     </main>
   );
 }
