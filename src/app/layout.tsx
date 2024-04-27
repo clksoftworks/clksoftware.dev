@@ -1,8 +1,21 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
+import Image from "next/image";
+import backgroundPicture from "../../public/background.png";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const fontSans = localFont({
+  src: "../../public/df9e1f4f05c1afa88b0cb5d2bc8c73ea.woff2",
+  variable: "--font-sans",
+});
+const fontDisplay = localFont({
+  src: "../../public/a8dc217fc9ee0a8d020d2c061f10a2e1.woff2",
+  variable: "--font-display",
+});
+const fontSignature = localFont({
+  src: "../../public/2f3bd5b9d245ca50231c17abda9489a6.woff2",
+  variable: "--font-signature",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App2",
@@ -16,8 +29,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>          
-        {children}            
+      <body
+        className={`${fontSans.variable} ${fontDisplay.variable} ${fontSignature.variable} py-12`}
+      >
+        {children}
+
+        <Image src={backgroundPicture} alt="Test" fill style={{zIndex: 1, objectFit: 'cover'}} />
       </body>
     </html>
   );

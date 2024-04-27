@@ -17,8 +17,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - [x] Setup continuous deployment
 - [x] Create a placeholder screen using images
 - [x] Update favicon 
-- [] Setup project desgin system
-  - [ ] Install fonts & configure Tailwind fonts
+- [ ] Setup project desgin system
+  - [x] Install fonts & configure Tailwind fonts
   - [ ] Setup Tailwind colors
 - [ ] Export raw resources
   - [ ] Map
