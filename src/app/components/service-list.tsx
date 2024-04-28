@@ -11,7 +11,7 @@ export default function ServiceList() {
         </h2>
         <ul className="space-y-4 text-2xl">
           <li>
-            We design our partner's entire applications; from infrastructure to
+            We design our partner&apos;s entire applications; from infrastructure to
             code. Ensuring business requirements are met and risks are
             mitigated.
           </li>
@@ -20,10 +20,10 @@ export default function ServiceList() {
             scratch.
           </li>
           <li>
-            We continue to maintain your partner's applications so they run
+            We continue to maintain your partner&apos;s applications so they run
             smoothly for years to come.
           </li>
-          <li>Don't have tech leadership? We offer that, too!</li>
+          <li>Don&apos;t have tech leadership? We offer that, too!</li>
         </ul>
       </div>
       <div className="col-span-4 flex justify-end">

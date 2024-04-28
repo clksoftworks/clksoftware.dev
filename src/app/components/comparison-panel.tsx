@@ -20,7 +20,7 @@ export default function ComparisonPanel() {
           </li>
           <li>
             End-to-End solutions: from initial audit to ongoing maintenance,
-            we're with you every step of the way.
+            we&apos;re with you every step of the way.
           </li>
           <li>From initial audit to ongoing maintenance</li>
         </ul>
