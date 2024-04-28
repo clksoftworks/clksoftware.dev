@@ -4,7 +4,7 @@ import AmericanHeartIcon from "./american-heart-icon";
 
 export default function Footer() {
   return (
-    <footer className="border-[3px] border-t-0 py-6 text-center border-black relative">
+    <footer className="py-6 text-center relative">
       <p className="font-signature text-xl justify-center flex items-center w-full space-x-4 text-shadow z-10 relative">
         <span>Made with</span>
         <AmericanHeartIcon />

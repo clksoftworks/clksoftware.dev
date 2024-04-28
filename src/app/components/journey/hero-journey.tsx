@@ -1,7 +1,7 @@
 export default function HeroJourney() {
   return (
     <svg
-      className="path"
+      className="path h-full"
       width="371"
       height="247"
       viewBox="0 0 371 247"
