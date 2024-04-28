@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className="max-w-7xl w-full min-h-screen flex-col font-sans bg-[#384136] relative z-10 mx-auto">
-      <header className="flex justify-between items-end p-24 border-[3px] border-black border-b-0">
+      <header className="flex flex-col md:flex-row p-8 items-center md:justify-between md:p-16 lg:p-24 border-[3px] border-black border-b-0">
         <Logo />
         <Navigation />
       </header>

@@ -1,7 +1,7 @@
 export default function Logo() {
   return (
     <div
-      className="flex space-x-2 items-end"
+      className="flex space-x-2 items-end justify-center md:justify-start md:mb-0 mb-6"
       id="home"
     >
       <svg

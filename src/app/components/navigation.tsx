@@ -1,6 +1,6 @@
 export default function Navigation() {
   return (
-    <nav className="flex justify-between items-center">
+    <nav className="flex justify-center">
       <ul className="flex space-x-8 text-2xl uppercase">
         <li>
           <a href="#home" className="animate-underline-from-center">
