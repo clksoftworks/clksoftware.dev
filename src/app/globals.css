@@ -18,7 +18,13 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: #2c322b;
+  background: hsl(111, 8%, 18%);
+}
+
+.text-outline-black {
+  text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black,
+    -1px 1px black;
+  -webkit-text-stroke: 0.0625rem black;
 }
 
 .animate-underline-from-center:after {
@@ -44,8 +50,7 @@ body {
   }
 }
 
-
-.path .animated {    
+.path .animated {
   animation: dash 3s linear forwards;
 }
 

@@ -4,12 +4,12 @@ import ComparisonPanelJourney from "./journey/comparison-panel-journey";
 
 export default function ComparisonPanel() {
   return (
-    <section className="relative mx-40" id="about">
-      <div className="border-black border-2 shadow-lg bg-[#EFE8DB] text-black py-12 px-24 z-10 relative">
+    <section className="relative grid" id="about">
+      <div className="border-black border-2 shadow-lg bg-[#EFE8DB] text-black py-12 px-6 md:px-24 z-10 relative mx-2">
         <h2 className="text-4xl uppercase mb-4">
           What sets us <span className="underline">apart</span>
         </h2>
-        <ul className="text-2xl space-y-2 list-disc">
+        <ul className="text-2xl space-y-2 list-disc list-inside">
           <li>
             Personalized approach: We tailor our services to fit your unique
             needs and vision.
@@ -26,7 +26,7 @@ export default function ComparisonPanel() {
         </ul>
       </div>
 
-      <div className="absolute -top-60 -left-36 z-0">
+      <div className="hidden md:block absolute -top-60 -left-36 z-0">
         <ComparisonPanelJourney />
       </div>
     </section>

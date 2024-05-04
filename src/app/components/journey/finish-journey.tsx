@@ -1,6 +1,6 @@
 export default function finishJourney() {
   return (
-    <div className="flex justify-end my-16">
+    <div className="flex justify-end">
       <svg
         className="path"
         width="518"
