@@ -40,6 +40,10 @@ export default function ContactInformation() {
               <span>Email address copied to clipboard</span>
             </div>
           )}
+
+          <div className="text-xl font-display">
+          <a href="tel:3166695582">316 669 5582</a>
+          </div>
         </dd>
       </dl>
     </div>
