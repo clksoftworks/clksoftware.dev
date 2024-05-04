@@ -7,6 +7,7 @@ import ServiceList from "./components/service-list";
 import ComparisonPanel from "./components/comparison-panel";
 import CallToAction from "./components/call-to-action";
 import FinishJourney from "./components/journey/finish-journey";
+import ContactInformation from "./components/contact-information";
 
 export const metadata: Metadata = {
   title:
@@ -34,6 +35,8 @@ export default function Home() {
       <ComparisonPanel />
 
       <FinishJourney />
+
+      <ContactInformation />
 
       <Footer />
     </main>
