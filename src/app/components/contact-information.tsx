@@ -2,7 +2,7 @@
 
 import { useCopyToClipboard } from "usehooks-ts";
 
-export default function contactInformation() {
+export default function ContactInformation() {
   const [copiedText, copy] = useCopyToClipboard();
 
   const emailAddress = "info@clksoftware.dev";
