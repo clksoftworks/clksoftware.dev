@@ -1,10 +1,15 @@
 export default function Navigation() {
   return (
     <nav className="flex justify-center">
-      <ul className="flex space-x-8 text-2xl uppercase">
+      <ul className="flex space-x-4 text-xl sm:space-x-6 md:text-2xl md:space-x-8 uppercase">
         <li>
           <a href="#home" className="animate-underline-from-center">
             Home
+          </a>
+        </li>
+        <li>
+          <a href="#services" className="animate-underline-from-center">
+            Services
           </a>
         </li>
         <li>
