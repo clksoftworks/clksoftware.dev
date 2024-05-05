@@ -16,7 +16,7 @@ const ContactInformation = ({ className }: { className: string }) => {
   return (
     <div id="contact" className={`${className} px-8 text-center`}>
       <dl>
-        <dt className="text-xl mb-2">
+        <dt className="text-2xl mb-8">
           Contact us to start your free consultation
         </dt>
         <dd className="text-xl font-display">
@@ -43,7 +43,7 @@ const ContactInformation = ({ className }: { className: string }) => {
             </div>
           )}
 
-          <div className="text-xl font-display">
+          <div className="text-2xl font-display">
             <a href="tel:3166695582">316 669 5582</a>
           </div>
         </dd>

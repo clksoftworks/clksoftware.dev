@@ -5,8 +5,8 @@ import ComparisonPanelJourney from "./journey/comparison-panel-journey";
 const ComparisonPanel = ({ className }: { className: string }) => {
   return (
     <section className={`${className} relative grid`} id="about">
-      <div className="border-black border-2 shadow-lg bg-[#EFE8DB] text-black py-12 px-6 md:px-24 z-10 relative mx-2">
-        <h2 className="text-4xl uppercase mb-4">
+      <div className="border-black border-2 shadow-lg bg-[#EFE8DB] text-black py-8 px-6 md:px-24 z-10 relative mx-2">
+        <h2 className="text-4xl uppercase mb-8">
           What sets us <span className="underline">apart</span>
         </h2>
         <ul className="text-2xl space-y-2 list-disc list-inside">

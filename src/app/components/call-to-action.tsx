@@ -16,9 +16,12 @@ const CallToAction = ({ className }: { className: string | undefined }) => {
             CLK Software has everything to help you design, launch, and maintain
             your web systems including websitse, web applications, and APIs.
           </p>
-          <button className="border-black border-2 text-white px-4 py-2 text-xl font-display bg-black bg-opacity-30 block w-full">
+          <a
+            href="#contact"
+            className="border-black border-2 text-white px-4 py-2 text-xl font-display bg-black bg-opacity-30 block w-full text-center"
+          >
             Get in touch
-          </button>
+          </a>
         </div>
       </div>
     </section>

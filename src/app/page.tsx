@@ -22,17 +22,17 @@ export default function Home() {
     <main className="max-w-7xl w-full min-h-screen flex-col font-sans bg-[#384136] relative z-10 mx-auto border-4 border-black">
       <Header className="mb-8" />
 
-      <Hero className="mb-12" />
+      <Hero className="mb-24" />
 
-      <CallToAction className="mb-12" />
+      <CallToAction className="mb-24" />
 
-      <ServiceList className="mb-12" />
+      <ServiceList className="mb-32" />
 
-      <ComparisonPanel className="mb-12" />
+      <ComparisonPanel className="mb-24" />
 
-      <FinishJourney className="mb-12 pl-8" />
+      <FinishJourney className="mb-24 pl-8" />
 
-      <ContactInformation className="mb-12" />
+      <ContactInformation className="mb-24" />
 
       <Footer className="" />
     </main>
