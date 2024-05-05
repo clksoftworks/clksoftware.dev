@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${fontSans.variable} ${fontDisplay.variable} ${fontSignature.variable} py-12`}
+        className={`${fontSans.variable} ${fontDisplay.variable} ${fontSignature.variable} py-8 px-4`}
       >
         {children}
 
