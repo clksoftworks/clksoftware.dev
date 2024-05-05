@@ -6,7 +6,7 @@ export default function HeroJourney() {
   return (
     <InViewClass classNameWhenInView="path">
       <svg
-        className="h-full"
+        className="h-full max-w-full"
         width="371"
         height="247"
         viewBox="0 0 371 247"

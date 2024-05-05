@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import InViewClass from "../in-view-class";
 
@@ -6,6 +6,7 @@ export default function CallToActionJourney() {
   return (
     <InViewClass classNameWhenInView="path">
       <svg
+        className="max-w-full"
         width="233"
         height="418"
         viewBox="0 0 233 418"

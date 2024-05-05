@@ -7,7 +7,7 @@ export default function comparisonPanelJourney() {
   return (
     <InViewClass classNameWhenInView="path">
       <svg
-        className="h-full"
+        className="h-full max-w-full"
         width="597"
         height="485"
         viewBox="0 0 597 485"

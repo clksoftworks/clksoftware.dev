@@ -6,7 +6,7 @@ export default function serviceListJourney() {
   return (
     <InViewClass classNameWhenInView="path">
       <svg
-        className="h-full"
+        className="h-full max-w-full"
         width="370"
         height="557"
         viewBox="0 0 370 557"
