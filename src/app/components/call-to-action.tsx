@@ -1,8 +1,8 @@
 import CallToActionJourney from "./journey/call-to-action-journey";
 
-export default function callToAction() {
+const CallToAction = ({ className }: { className: string | undefined }) => {
   return (
-    <section className="relative">
+    <section className={`${className} relative`}>
       <div className="grid md:grid-cols-12 gap-4 md:gap-16 items-center">
         <div className="flex row-span-full col-span-12 col-start-1 col-end-12 bg-[#384136]">
           <CallToActionJourney />
@@ -23,4 +23,6 @@ export default function callToAction() {
       </div>
     </section>
   );
-}
+};
+
+export default CallToAction;

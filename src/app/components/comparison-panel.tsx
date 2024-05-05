@@ -2,9 +2,9 @@ import Image from "next/image";
 import comparisonPanelImage from "../../../public/comparison-panel.png";
 import ComparisonPanelJourney from "./journey/comparison-panel-journey";
 
-export default function ComparisonPanel() {
+const ComparisonPanel = ({ className }: { className: string }) => {
   return (
-    <section className="relative grid" id="about">
+    <section className={`${className} relative grid`} id="about">
       <div className="border-black border-2 shadow-lg bg-[#EFE8DB] text-black py-12 px-6 md:px-24 z-10 relative mx-2">
         <h2 className="text-4xl uppercase mb-4">
           What sets us <span className="underline">apart</span>
@@ -31,4 +31,6 @@ export default function ComparisonPanel() {
       </div>
     </section>
   );
-}
+};
+
+export default ComparisonPanel;

@@ -2,7 +2,7 @@
 
 import { useCopyToClipboard } from "usehooks-ts";
 
-export default function ContactInformation() {
+const ContactInformation = ({ className }: { className: string }) => {
   const [copiedText, copy] = useCopyToClipboard();
 
   const emailAddress = "info@clksoftware.dev";
@@ -14,9 +14,11 @@ export default function ContactInformation() {
   };
 
   return (
-    <div id="contact" className="px-8 text-center">
+    <div id="contact" className={`${className} px-8 text-center`}>
       <dl>
-        <dt className="text-xl mb-2">Contact us to start your free consultation</dt>
+        <dt className="text-xl mb-2">
+          Contact us to start your free consultation
+        </dt>
         <dd className="text-xl font-display">
           <button onClick={handleCopy}>{emailAddress}</button>
           {copiedText && (
@@ -42,10 +44,12 @@ export default function ContactInformation() {
           )}
 
           <div className="text-xl font-display">
-          <a href="tel:3166695582">316 669 5582</a>
+            <a href="tel:3166695582">316 669 5582</a>
           </div>
         </dd>
       </dl>
     </div>
   );
-}
+};
+
+export default ContactInformation;

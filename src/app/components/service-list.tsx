@@ -2,9 +2,12 @@ import ServiceListJourney from "./journey/service-list-journey";
 import Image from "next/image";
 import serviceListImage from "../../../public/service-list.png";
 
-export default function ServiceList() {
+const ServiceList = ({ className }: { className: string | undefined }) => {
   return (
-    <section id="services" className="relative grid grid-cols-12 items-center">
+    <section
+      id="services"
+      className={`${className} relative grid grid-cols-12 items-center`}
+    >
       <div className="row-span-full grid-start-1 col-span-12 md:ml-40 px-8">
         <h2 className="text-4xl uppercase mb-8">
           Full <span className="underline">SDLC</span> Services
@@ -31,4 +34,6 @@ export default function ServiceList() {
       </div>
     </section>
   );
-}
+};
+
+export default ServiceList;
