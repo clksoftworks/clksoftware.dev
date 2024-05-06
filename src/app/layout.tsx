@@ -7,14 +7,17 @@ import "./globals.css";
 const fontSans = localFont({
   src: "../../public/df9e1f4f05c1afa88b0cb5d2bc8c73ea.woff2",
   variable: "--font-sans",
+  display: "swap"
 });
 const fontDisplay = localFont({
   src: "../../public/a8dc217fc9ee0a8d020d2c061f10a2e1.woff2",
   variable: "--font-display",
+  display: "swap"
 });
 const fontSignature = localFont({
   src: "../../public/2f3bd5b9d245ca50231c17abda9489a6.woff2",
   variable: "--font-signature",
+  display: "swap"
 });
 
 export const metadata: Metadata = {
