@@ -14,19 +14,15 @@ const ServiceList = ({ className }: { className: string | undefined }) => {
         </h2>
         <ul className="space-y-4 text-2xl">
           <li>
-            We design our partner&apos;s entire applications; from
-            infrastructure to code. Ensuring business requirements are met and
-            risks are mitigated.
+            We <span className="underline">design</span> our partners&apos; entire applications, from infrastructure to code, ensuring they meet business requirements and mitigate risk.
           </li>
           <li>
-            Have us audit your existing code, or build a new application from
-            scratch.
+            We <span className="underline">build</span> modern and performant applications, following industry best practices, with usability and maintainability top of mind.
           </li>
           <li>
-            We continue to maintain your partner&apos;s applications so they run
-            smoothly for years to come.
+            We help clients diagnose and resolve issues with their existing systems, to improve and <span className="underline">maintain</span> the health and integrity of their applications and data.
           </li>
-          <li>Don&apos;t have tech leadership? We offer that, too!</li>
+          <li>We identify strategic web solutions for our clients, aimed at optimizing their business processes, elevating customer experiences, and broadening outreach.</li>
         </ul>
       </div>
       <div className="col-span-4 justify-end md:flex hidden">

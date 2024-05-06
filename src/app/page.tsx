@@ -32,7 +32,7 @@ export default function Home() {
 
       <FinishJourney className="mb-24 pl-8" />
 
-      <ContactInformation className="mb-24" />
+      <ContactInformation className="py-16" />
 
       <Footer className="" />
     </main>

@@ -9,12 +9,10 @@ const CallToAction = ({ className }: { className: string | undefined }) => {
         </div>
         <div className="px-8 row-span-full col-span-12 col-start-1 col-end-12 md:col-span-7 md:px-0 py-4 bg-[#384136]">
           <p className="text-3xl md:text-xl mb-4">
-            Gain the <strong className="uppercase">confidence</strong> to scale!
-            With a team that has <em className="opacity-80">done it before</em>.
+            Gain the CONFIDENCE to forge ahead in the digital wilderness! With a team that has done it before.
           </p>
           <p className="text-lg mb-4">
-            CLK Software has everything to help you design, launch, and maintain
-            your web systems including websitse, web applications, and APIs.
+            CLK  Software will help you design, launch, and maintain your  web systems, including websites, web applications, and APIs.
           </p>
           <a
             href="#contact"

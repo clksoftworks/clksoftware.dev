@@ -1,6 +1,7 @@
 "use client";
 
 import { useCopyToClipboard } from "usehooks-ts";
+import Logo from "./logo";
 
 const ContactInformation = ({ className }: { className: string }) => {
   const [copiedText, copy] = useCopyToClipboard();
@@ -14,40 +15,25 @@ const ContactInformation = ({ className }: { className: string }) => {
   };
 
   return (
-    <div id="contact" className={`${className} px-8 text-center`}>
-      <dl>
-        <dt className="text-2xl mb-8">
-          Contact us to start your free consultation
-        </dt>
-        <dd className="text-xl font-display">
-          <button onClick={handleCopy}>{emailAddress}</button>
-          {copiedText && (
-            <div className="flex justify-center space-x-1 text-sm font-sans text-[#C38558] text-right">
-              <svg
-                className="w-6 h-6"
-                data-slot="icon"
-                aria-hidden="true"
-                fill="none"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                ></path>
-              </svg>
-              <span>Email address copied to clipboard</span>
-            </div>
-          )}
+    <div id="contact" className={`${className} px-8 text-center bg-[#212520]`}>
+      <p className="text-2xl mb-4">GET IN TOUCH</p>
+      <div className="flex justify-center text-2xl">
+        <button className="flex items-center" onClick={handleCopy}>
+          <svg className="w-6 h-6 mr-2 text-[#C38558]" data-slot="icon" aria-hidden="true" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+          <span>{emailAddress}</span>
+        </button>
 
-          <div className="text-2xl font-display">
-            <a href="tel:3166695582">316 669 5582</a>
-          </div>
-        </dd>
-      </dl>
+      </div>      
+      <div className="flex items-center justify-center text-2xl mb-8">
+        <svg className="w-6 h-6 mr-2 text-[#C38558]" data-slot="icon" aria-hidden="true" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+        <a href="tel:3166695582">316 669 5582</a>
+      </div>
+
+      <Logo />
     </div>
   );
 };

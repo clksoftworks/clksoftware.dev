@@ -5,7 +5,12 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`c3`](https:
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies:
+```bash
+npm i
+```
+
+Start Development Server:
 
 ```bash
 npm run dev

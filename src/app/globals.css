@@ -54,6 +54,11 @@ body {
   animation: dash 3s linear forwards;
 }
 
+.grid-paper-pattern {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzE5NV81KSI+CjxwYXRoIGQ9Ik0xMCAwSDBWMTBIMTBWMFoiIGZpbGw9IiMyMTE5MTUiLz4KPHBhdGggZD0iTTggMEgwVjhIOFYwWiIgZmlsbD0iIzM4NDEzNiIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzE5NV81Ij4KPHJlY3Qgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIiBmaWxsPSJ3aGl0ZSIvPgo8L2NsaXBQYXRoPgo8L2RlZnM+Cjwvc3ZnPgo=");
+  background-repeat: repeat;
+}
+
 @keyframes dash {
   to {
     stroke-dashoffset: 0;

@@ -14,18 +14,16 @@ const ComparisonPanel = ({ className }: { className: string }) => {
         </h2>
         <ul className="text-2xl space-y-2 list-disc list-inside">
           <li>
-            Personalized approach: We tailor our services to fit your unique
-            needs and vision.
+            <span className="underline">Engineering Excellence</span>: With nearly 20 years of senior-level professional experience, our software engineering team lead specializes in delivering web applications that adhere to industry standards and best practices.
           </li>
           <li>
-            Transparent communication: No tech jargon, just clear
-            straightforward dialogue.
+            <span className="underline">Organized, Dependable, and Transparent</span>: We implement program management standards and processes and guide our clients through a seamless delivery.
           </li>
           <li>
-            End-to-End solutions: from initial audit to ongoing maintenance,
-            we&apos;re with you every step of the way.
+            <span className="underline">Personalized Approach</span>: We strive to understand your business needs and tailor solutions to your unique business goals, either by developing custom solutions or configuring out-of-box options.
           </li>
-          <li>From initial audit to ongoing maintenance</li>
+          <li><span className="underline">Full Scope End-to-End Solutions</span>: From planning and implementation, to deployment and ongoing maintenance, we&apos;ve got you covered through every step of the software development lifecycle.</li>
+          <li><span className="underline">No Unnecessary Costs</span>: We are a small team by choice; we don’t have to cover executive salaries, corporate entertaining per diems, or an office space with a view. Instead, we pass those savings on to you.</li>
         </ul>
       </div>
 
@@ -33,12 +31,8 @@ const ComparisonPanel = ({ className }: { className: string }) => {
         <ComparisonPanelJourney />
       </div>
 
-      <Image
-        src={comparisonPanelBackdropImage}
-        fill
-        alt="Comparison Panel"
-        className="absolute !top-4 !left-6 !right-0 !-bottom-6 object-cover !w-auto"
-      />
+      <div className="absolute top-3 left-6 right-1 bottom-1 grid-paper-pattern"></div>
+
     </section>
   );
 };
