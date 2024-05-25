@@ -1,3 +1,4 @@
+import InViewClass from "../in-view-class";
 import CallToActionJourney from "./journey/call-to-action-journey";
 
 const CallToAction = ({ className }: { className: string | undefined }) => {
@@ -20,9 +21,13 @@ const CallToAction = ({ className }: { className: string | undefined }) => {
           </p>
           <a
             href="#contact"
-            className="border-black border-2 text-[#171717] px-4 py-2 text-lg font-sans uppercase bg-[#C38558] block text-center mx-4"
+            className="group border-black border-2 text-[#171717] px-4 py-2 text-lg font-sans uppercase bg-[#C38558] block text-center mx-4"
           >
-            Get in touch <span className="underline">today</span>!
+            <InViewClass classNameWhenInView="animate-jump">
+              <span className="group-hover:animate-wiggle inline-block">
+                Get in touch now!
+              </span>
+            </InViewClass>
           </a>
         </div>
       </div>
