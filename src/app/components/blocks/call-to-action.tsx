@@ -3,7 +3,7 @@ import CallToActionJourney from "./journey/call-to-action-journey";
 const CallToAction = ({ className }: { className: string | undefined }) => {
   return (
     <section
-      className={`${className} relative bg-[#292E27] border-2 border-[#171717] mx-2 text-center`}
+      className={`${className} relative bg-[#292E27] border-2 border-[#171717] text-center`}
     >
       <div className="grid md:grid-cols-12 gap-4 md:gap-16 items-center">
         <div className="hidden row-span-full col-span-12 col-start-1 col-end-12 bg-[#384136] md:flex">

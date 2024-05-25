@@ -8,7 +8,7 @@ const ComparisonPanel = ({ className }: { className: string }) => {
       className={`${className} relative grid pb-4 overflow-hidden`}
       id="about"
     >
-      <div className="border-black border-2 shadow-lg bg-[#EFE8DB] text-black py-16 px-4 md:px-24 z-10 relative mx-4 font-business">
+      <div className="border-black border-2 shadow-lg bg-[#EFE8DB] text-black py-16 px-8 md:px-24 z-10 relative font-business">
         <h2 className="text-4xl uppercase mb-8 font-sans ml-6">
           What sets us <span className="underline">apart</span>
         </h2>

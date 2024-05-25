@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="max-w-7xl w-full min-h-screen flex-col font-sans bg-[#384136] relative z-10 mx-auto border-4 border-black">
+    <main className="max-w-7xl w-full min-h-screen flex-col font-sans bg-[#384136] relative z-10 mx-auto md:border-4 md:border-black">
       <Header className="mb-4" />
 
       <Hero className="mb-16" />
