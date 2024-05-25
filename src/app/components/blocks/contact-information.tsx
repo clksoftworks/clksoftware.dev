@@ -17,10 +17,11 @@ const ContactInformation = ({ className }: { className: string }) => {
   return (
     <div id="contact" className={`${className} px-8 text-center bg-[#212520]`}>
       <p className="text-4xl mb-12">GET IN TOUCH</p>
+
       <Logo />
 
-      <div className="flex justify-center">
-        <div className="border-l-2 border-black pl-6 font-business space-y-4">
+      <div className="flex justify-center mt-12">
+        <div className="border-l-2 border-[#171717] pl-6 font-business space-y-4">
           <div className="flex text-base">
             <button className="flex items-center" onClick={handleCopy}>
               <svg
@@ -60,7 +61,9 @@ const ContactInformation = ({ className }: { className: string }) => {
                 strokeLinejoin="round"
               ></path>
             </svg>
-            <a href="tel:3166695582" className="tracking-widest">316 669 5582</a>
+            <a href="tel:3166695582" className="tracking-widest">
+              316 669 5582
+            </a>
           </div>
         </div>
       </div>
