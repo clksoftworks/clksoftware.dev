@@ -11,14 +11,14 @@ jobs:
       deployments: write
     name: Publish to Cloudflare Pages
     steps:
-      - name: Discord Webhook Action
-        uses: tsickert/discord-webhook@v5.3.0
+      - uses: sarisia/actions-status-discord@v1
+        if: always()
         with:
-          webhook-url: ${{ secrets.WEBHOOK_URL }}
+          webhook: ${{ secrets.WEBHOOK_URL }}
 
       - name: Checkout
         uses: actions/checkout@v3
-        
+
       - name: Build
         run: npm install && npm run pages:build
 
