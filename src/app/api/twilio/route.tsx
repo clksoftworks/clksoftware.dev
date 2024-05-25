@@ -1,8 +1,7 @@
-export const dynamic = "force-dynamic"; // defaults to auto
-export const runtime = "edge";
+import { NextResponse } from "next/server";
 
 export async function GET() {
-  return new Response(
+  return new NextResponse(
     `<?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <Dial>

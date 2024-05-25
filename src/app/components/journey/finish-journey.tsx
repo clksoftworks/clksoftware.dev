@@ -1,6 +1,3 @@
-'use client';
-
-
 import InViewClass from "../in-view-class";
 
 const FinishJourney = ({ className }: { className: string }) => {
