@@ -15,6 +15,7 @@ const config: Config = {
       },
       fontFamily: {
         sans: ['var(--font-sans)'],
+        business: ['var(--font-business)'],
         display: ['var(--font-display)'],
         signature: ['var(--font-signature)'],
       },

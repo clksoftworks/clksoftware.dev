@@ -1,24 +1,31 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Cabin } from "next/font/google";
 import Image from "next/image";
 import backgroundPicture from "../../public/background.png";
-import { getSession } from '@auth0/nextjs-auth0';
 import "./globals.css";
+
+const fontBusiness = Cabin({
+  subsets: ["latin"],
+  variable: "--font-business",
+});
 
 const fontSans = localFont({
   src: "../../public/df9e1f4f05c1afa88b0cb5d2bc8c73ea.woff2",
   variable: "--font-sans",
-  display: "swap"
+  display: "swap",
 });
+
 const fontDisplay = localFont({
   src: "../../public/a8dc217fc9ee0a8d020d2c061f10a2e1.woff2",
   variable: "--font-display",
-  display: "swap"
+  display: "swap",
 });
+
 const fontSignature = localFont({
   src: "../../public/2f3bd5b9d245ca50231c17abda9489a6.woff2",
   variable: "--font-signature",
-  display: "swap"
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -34,11 +41,16 @@ export default async function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${fontSans.variable} ${fontDisplay.variable} ${fontSignature.variable} py-8 px-4`}
+        className={`${fontSans.variable} ${fontDisplay.variable} ${fontSignature.variable} ${fontBusiness.variable}`}
       >
         {children}
 
-        <Image src={backgroundPicture} alt="Test" fill style={{zIndex: 1, objectFit: 'cover'}} />
+        <Image
+          src={backgroundPicture}
+          alt="Test"
+          fill
+          className="z-[1] object-cover"
+        />
       </body>
     </html>
   );

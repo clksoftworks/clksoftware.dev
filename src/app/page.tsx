@@ -20,9 +20,9 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className="max-w-7xl w-full min-h-screen flex-col font-sans bg-[#384136] relative z-10 mx-auto border-4 border-black">
-      <Header className="mb-8" />
+      <Header className="mb-4" />
 
-      <Hero className="mb-24" />
+      <Hero className="mb-16" />
 
       <CallToAction className="mb-24" />
 

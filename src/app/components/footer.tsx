@@ -11,7 +11,12 @@ const Footer = ({ className }: { className: string }) => {
         <span>in Kansas</span>
       </p>
 
-      <Image src={mapImage} alt="A map of Kansas" fill objectFit="cover" className="z-0" />
+      <Image
+        src={mapImage}
+        alt="A map of Kansas"
+        fill
+        className="z-0 object-cover"
+      />
     </footer>
   );
 };
