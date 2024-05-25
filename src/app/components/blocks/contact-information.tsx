@@ -16,7 +16,7 @@ const ContactInformation = ({ className }: { className: string }) => {
 
   return (
     <div id="contact" className={`${className} px-8 text-center bg-[#212520]`}>
-      <p className="text-4xl mb-12">GET IN TOUCH</p>
+      <p className="text-3xl mb-12">GET IN TOUCH</p>
 
       <Logo />
 

@@ -4,8 +4,8 @@ import AmericanHeartIcon from "./american-heart-icon";
 
 const Footer = ({ className }: { className: string }) => {
   return (
-    <footer className="py-6 text-center relative">
-      <p className="font-signature text-xl justify-center flex items-center w-full space-x-4 text-shadow z-10 relative">
+    <footer className="py-4 text-center relative">
+      <p className="font-signature justify-center flex items-center w-full space-x-2 text-shadow z-10 relative">
         <span>Made with</span>
         <AmericanHeartIcon />
         <span>in Kansas</span>

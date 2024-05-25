@@ -1,14 +1,12 @@
 export default function americanHeartIcon() {
   return (
-    <svg width="44" height="44" fill="none">
+    <svg className="w-8 h-8" fill="none" viewBox="0 0 44 44">
       <mask
         id="mask0_92_116"
-        style={{ maskType: "alpha"}}
+        style={{ maskType: "alpha" }}
         maskUnits="userSpaceOnUse"
         x="3"
         y="6"
-        width="38"
-        height="32"
       >
         <path
           d="M3.66699 16.7515c0 8.9153 7.36891 13.6662 12.76321 17.9186 1.9035 1.5006 3.7368 2.9134 5.5701 2.9134 1.8334 0 3.6667-1.4128 5.5702-2.9134 5.3943-4.2524 12.7632-9.0033 12.7632-17.9186 0-8.91541-10.0837-15.23803-18.3334-6.6669-8.2497-8.57113-18.33331-2.24851-18.33331 6.6669Z"
