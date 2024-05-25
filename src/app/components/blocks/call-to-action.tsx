@@ -11,7 +11,7 @@ const CallToAction = ({ className }: { className: string | undefined }) => {
           <CallToActionJourney />
         </div>
         <div className="px-6 row-span-full col-span-12 col-start-1 col-end-12 md:col-span-7 md:px-0 py-16 md:bg-[#384136]">
-          <p className="text-2xl md:text-xl mb-4">
+          <p className="text-2xl md:text-xl font-bold mb-4 font-business">
             Gain the CONFIDENCE to forge ahead in the digital wilderness.
           </p>
           <hr className="my-6 border-[#171717] border mx-4" />

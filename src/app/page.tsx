@@ -28,9 +28,9 @@ export default function Home() {
 
       <ServiceList className="mb-32" />
 
-      <ComparisonPanel className="mb-24" />
+      <ComparisonPanel className="mb-0 md:mb-24" />
 
-      <FinishJourney className="mb-24 pl-8" />
+      <FinishJourney className="mb-24 pl-8 hidden md:block" />
 
       <ContactInformation className="py-16" />
 

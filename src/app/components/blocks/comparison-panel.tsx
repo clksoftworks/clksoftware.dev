@@ -5,11 +5,11 @@ import ComparisonPanelJourney from "./journey/comparison-panel-journey";
 const ComparisonPanel = ({ className }: { className: string }) => {
   return (
     <section
-      className={`${className} relative grid pb-4 overflow-hidden`}
+      className={`${className} relative grid overflow-hidden`}
       id="about"
     >
-      <div className="border-black border-2 shadow-lg bg-[#EFE8DB] text-black py-16 px-8 md:px-24 z-10 relative font-business">
-        <h2 className="text-4xl uppercase mb-8 font-sans ml-6">
+      <div className="md:border-black md:border-2 shadow-lg bg-[#EFE8DB] text-[#171717] py-16 px-8 md:px-24 z-10 relative font-business">
+        <h2 className="text-4xl uppercase mb-8 ml-6 font-business font-bold">
           What sets us <span className="underline">apart</span>
         </h2>
         <ul className="text-2xl space-y-8 list-disc list-inside">
@@ -122,7 +122,7 @@ const ComparisonPanel = ({ className }: { className: string }) => {
         <ComparisonPanelJourney />
       </div>
 
-      <div className="absolute top-3 left-6 right-1 bottom-1 grid-paper-pattern"></div>
+      <div className="hidden md:block absolute top-3 left-6 right-1 bottom-1 grid-paper-pattern"></div>
     </section>
   );
 };
