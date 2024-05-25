@@ -16,7 +16,7 @@ const ServiceList = ({ className }: { className: string | undefined }) => {
         <ul className="space-y-4 font-business">
           <li className="flex space-x-4 items-start">
             <svg
-              className="max-w-4 mt-2"
+              className="max-w-4 w-full mt-2"
               viewBox="0 0 16 13"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +34,7 @@ const ServiceList = ({ className }: { className: string | undefined }) => {
           </li>
           <li className="flex space-x-4 items-start">
             <svg
-              className="max-w-4 mt-2"
+              className="max-w-4 w-full mt-2"
               viewBox="0 0 16 13"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +52,7 @@ const ServiceList = ({ className }: { className: string | undefined }) => {
           </li>
           <li className="flex space-x-4 items-start">
             <svg
-              className="max-w-4 mt-2"
+              className="max-w-4 w-full mt-2"
               viewBox="0 0 16 13"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +71,7 @@ const ServiceList = ({ className }: { className: string | undefined }) => {
           </li>
           <li className="flex space-x-4 items-start">
             <svg
-              className="max-w-4 mt-2"
+              className="max-w-4 w-full mt-2"
               viewBox="0 0 16 13"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
