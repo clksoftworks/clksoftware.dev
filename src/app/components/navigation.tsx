@@ -1,6 +1,6 @@
 export default function Navigation() {
   return (
-    <nav className="flex justify-center font-business font-semibold">
+    <nav className="flex justify-center font-business font-semibold leading-normal">
       <ul className="flex space-x-6 text-sm md:text-xl md:space-x-8 uppercase">
         <li>
           <a href="#home" className="animate-underline-from-center">

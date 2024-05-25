@@ -8,8 +8,8 @@ const ComparisonPanel = ({ className }: { className: string }) => {
       className={`${className} relative grid overflow-hidden`}
       id="about"
     >
-      <div className="md:border-black md:border-2 shadow-lg bg-[#EFE8DB] text-[#171717] py-16 px-8 md:px-24 z-10 relative font-business">
-        <h2 className="text-4xl uppercase mb-8 ml-6 font-business font-bold">
+      <div className="md:border-black md:border-2 shadow-lg bg-[#EFE8DB] text-[#171717] py-16 px-5 md:px-24 z-10 relative font-business leading-normal">
+        <h2 className="text-3xl uppercase mb-8 ml-6 font-business font-bold">
           What sets us <span className="underline">apart</span>
         </h2>
         <ul className="text-2xl space-y-8 list-disc list-inside">
@@ -26,7 +26,7 @@ const ComparisonPanel = ({ className }: { className: string }) => {
               />
             </svg>
             <div className="text-base">
-              <span className="text-[#855736] block font-bold uppercase text-lg">
+              <span className="text-[#855736] block font-bold uppercase">
                 Engineering Excellence
               </span>
               With nearly 20 years of senior-level professional experience, our
@@ -47,7 +47,7 @@ const ComparisonPanel = ({ className }: { className: string }) => {
               />
             </svg>
             <div className="text-base">
-              <span className="text-[#855736] block font-bold uppercase text-lg">
+              <span className="text-[#855736] block font-bold uppercase">
                 Organized, Dependable, and Transparent
               </span>
               We implement program management standards and processes and guide
@@ -67,7 +67,7 @@ const ComparisonPanel = ({ className }: { className: string }) => {
               />
             </svg>
             <div className="text-base">
-              <span className="text-[#855736] block font-bold uppercase text-lg">
+              <span className="text-[#855736] block font-bold uppercase">
                 Personalized Approach
               </span>
               We strive to understand your business needs and tailor solutions
@@ -88,7 +88,7 @@ const ComparisonPanel = ({ className }: { className: string }) => {
               />
             </svg>
             <div className="text-base">
-              <span className="text-[#855736] block font-bold uppercase text-lg">
+              <span className="text-[#855736] block font-bold uppercase">
                 Full Scope End-to-End Solutions
               </span>
               From planning and implementation, to deployment and ongoing
@@ -109,7 +109,7 @@ const ComparisonPanel = ({ className }: { className: string }) => {
               />
             </svg>
             <div className="text-base">
-              <span className="text-[#855736] block font-bold uppercase text-lg">No Unnecessary Costs</span>
+              <span className="text-[#855736] block font-bold uppercase">No Unnecessary Costs</span>
               We are a small team by choice; we don’t have to cover executive
               salaries, corporate entertaining per diems, or an office space
               with a view. Instead, we pass those savings on to you.

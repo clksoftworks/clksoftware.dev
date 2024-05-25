@@ -24,9 +24,9 @@ export default function Home() {
 
       <Hero className="mb-16" />
 
-      <CallToAction className="mb-24" />
+      <CallToAction className="mb-16" />
 
-      <ServiceList className="mb-32" />
+      <ServiceList className="mb-16" />
 
       <ComparisonPanel className="mb-0 md:mb-24" />
 
