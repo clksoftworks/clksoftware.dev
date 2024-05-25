@@ -1,4 +1,4 @@
-import InViewClass from "../in-view-class";
+import InViewClass from "../../in-view-class";
 
 const FinishJourney = ({ className }: { className: string }) => {
   return (

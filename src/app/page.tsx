@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 import Footer from "./components/footer";
-import Hero from "./components/hero";
-import ServiceList from "./components/service-list";
-import ComparisonPanel from "./components/comparison-panel";
-import CallToAction from "./components/call-to-action";
-import FinishJourney from "./components/journey/finish-journey";
-import ContactInformation from "./components/contact-information";
+import Hero from "./components/blocks/hero";
+import ServiceList from "./components/blocks/service-list";
+import ComparisonPanel from "./components/blocks/comparison-panel";
+import CallToAction from "./components/blocks/call-to-action";
+import FinishJourney from "./components/blocks/journey/finish-journey";
+import ContactInformation from "./components/blocks/contact-information";
 import Header from "./components/header";
 
 export const metadata: Metadata = {

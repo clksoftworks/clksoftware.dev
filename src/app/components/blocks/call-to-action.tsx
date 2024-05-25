@@ -20,9 +20,9 @@ const CallToAction = ({ className }: { className: string | undefined }) => {
           </p>
           <a
             href="#contact"
-            className="border-black border-2 text-[#171717] px-4 py-2 text-xl font-display bg-[#C38558] block text-center mx-4"
+            className="border-black border-2 text-[#171717] px-4 py-2 text-lg font-sans uppercase bg-[#C38558] block text-center mx-4"
           >
-            Get in touch
+            Get in touch <span className="underline">today</span>!
           </a>
         </div>
       </div>
