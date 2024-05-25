@@ -11,6 +11,11 @@ jobs:
       deployments: write
     name: Publish to Cloudflare Pages
     steps:
+      - name: Discord Webhook Action
+        uses: tsickert/discord-webhook@v5.3.0
+        with:
+          webhook-url: ${{ secrets.WEBHOOK_URL }}
+
       - name: Checkout
         uses: actions/checkout@v3
         
