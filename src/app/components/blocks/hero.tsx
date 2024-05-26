@@ -2,7 +2,7 @@ import HeroJourney from "./journey/hero-journey";
 
 const Hero = ({ className }: { className: string }) => {
   return (
-    <section className={`${className} relative px-5`}>
+    <section className={`${className} relative px-5 max-w-md md:max-w-full mx-auto`}>
       <div className="grid grid-cols-1 md:grid-cols-12 sm:gap-16 md:gap-16">
         <div className="md:col-span-7 md:justify-end order-2 md:-mt-16 mt-12">
           <h1 className="uppercase text-4xl bg-[#384136] mb-6 leading-tight">

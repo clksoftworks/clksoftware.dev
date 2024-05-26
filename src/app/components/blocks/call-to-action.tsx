@@ -6,7 +6,7 @@ const CallToAction = ({ className }: { className: string | undefined }) => {
     <section
       className={`${className} relative bg-[#292E27] border-2 border-[#171717] text-center`}
     >
-      <div className="grid md:grid-cols-12 gap-4 md:gap-16 items-center">
+      <div className="grid md:grid-cols-12 gap-4 md:gap-16 items-center max-w-md md:max-w-full mx-auto">
         <div className="hidden row-span-full col-span-12 col-start-1 col-end-12 bg-[#384136] md:flex">
           <CallToActionJourney />
         </div>

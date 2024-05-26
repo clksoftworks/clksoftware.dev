@@ -5,10 +5,10 @@ import ComparisonPanelJourney from "./journey/comparison-panel-journey";
 const ComparisonPanel = ({ className }: { className: string }) => {
   return (
     <section
-      className={`${className} relative grid overflow-hidden`}
+      className={`${className} relative grid overflow-hidden shadow-lg bg-[#EFE8DB]`}
       id="about"
     >
-      <div className="md:border-black md:border-2 shadow-lg bg-[#EFE8DB] text-[#171717] py-16 px-5 md:px-24 z-10 relative font-business leading-normal">
+      <div className="md:border-black md:border-2 text-[#171717] py-16 px-5 md:px-24 z-10 relative font-business leading-normal mx-auto max-w-md md:max-w-full">
         <h2 className="text-3xl uppercase mb-8 ml-6 font-business font-bold">
           What sets us <span className="underline">apart</span>
         </h2>
@@ -109,7 +109,9 @@ const ComparisonPanel = ({ className }: { className: string }) => {
               />
             </svg>
             <div className="text-base">
-              <span className="text-[#855736] block font-bold uppercase">No Unnecessary Costs</span>
+              <span className="text-[#855736] block font-bold uppercase">
+                No Unnecessary Costs
+              </span>
               We are a small team by choice; we don’t have to cover executive
               salaries, corporate entertaining per diems, or an office space
               with a view. Instead, we pass those savings on to you.

@@ -8,7 +8,7 @@ const ServiceList = ({ className }: { className: string | undefined }) => {
       id="services"
       className={`${className} relative grid grid-cols-12 items-center`}
     >
-      <div className="row-span-full grid-start-1 col-span-12 md:ml-40 px-5">
+      <div className="row-span-full grid-start-1 col-span-12 md:ml-40 px-5 max-w-md md:max-w-full mx-auto">
         <h2 className="text-3xl uppercase mb-8">
           FULL-SERVICE <span className="underline">SDLC</span>{" "}
           <span className="text-[#DFA479]">&</span> BEYOND
