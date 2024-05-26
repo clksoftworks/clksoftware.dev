@@ -24,17 +24,3 @@ npm run pages:preview
 Any time you push to `main` a [GitHub Action builds](https://github.com/chrislkeefer/clksoftware.dev/actions/workflows/publish.yml) the application and deploys it to Cloudflare Pages.
 
 ![clksoftware dev-deployment-lifecycle](https://github.com/clksoftworks/clksoftware.dev/assets/42353349/ee333d29-386d-4119-951a-c9cd48dc5d7e)
-
-## To Do
-- [x] Setup continuous deployment
-- [x] Create a placeholder screen using images
-- [x] Update favicon 
-- [x] Setup project desgin system
-  - [x] Install fonts & configure Tailwind fonts
-  - [ ] Setup Tailwind colors
-- [ ] Export raw resources
-  - [x] Map
-  - [x] Lines
-  - [x] Logo
-  - [x] American Heart
-- [ ] Write HTML
