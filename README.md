@@ -7,21 +7,20 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`c3`](https://developers.cloudflare.com/pages/get-started/c3).
 
 ## Getting Started
+### System Requirements
 
-Install dependencies:
+* Node.js 18.17 or later.
+* macOS, Windows (including WSL), and Linux are supported.
+
+### Start Development Server
 ```bash
 npm i
-```
-
-Start Development Server:
-
-```bash
 npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-> __Note:__ while the `npm run dev` command is optimal for local developmentm, you should preview your Pages application using `npm run pages:preview` before deploying to ensure compatibility.
+> `npm run dev` is optimal for development, however, be sure to preview your application on the Cloudflare Pages platform using `npm run pages:preview` to ensure compatibility.
 
 
 ## To Do
