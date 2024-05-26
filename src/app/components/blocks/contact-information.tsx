@@ -23,7 +23,7 @@ const ContactInformation = ({ className }: { className: string }) => {
       <div className="flex justify-center mt-12">
         <div className="border-l-2 border-[#171717] pl-6 font-business space-y-4">
           <div className="flex text-base">
-            <button className="flex items-center" onClick={handleCopy}>
+            <a className="flex items-center" href="mailto:info@clksoftware.dev">
               <svg
                 className="w-5 h-5 mr-2 text-[#C38558]"
                 data-slot="icon"
@@ -41,7 +41,7 @@ const ContactInformation = ({ className }: { className: string }) => {
                 ></path>
               </svg>
               <span className="tracking-widest">{emailAddress}</span>
-            </button>
+            </a>
           </div>
 
           <div className="flex items-center text-base">
@@ -61,8 +61,8 @@ const ContactInformation = ({ className }: { className: string }) => {
                 strokeLinejoin="round"
               ></path>
             </svg>
-            <a href="tel:3166695582" className="tracking-widest">
-              316 669 5582
+            <a href="tel:+13166657496 " className="tracking-widest">
+              316 665 7496
             </a>
           </div>
         </div>
