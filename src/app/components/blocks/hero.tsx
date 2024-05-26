@@ -32,7 +32,7 @@ const Hero = ({ className }: { className: string }) => {
             </svg>
             <span className="font-bold text-sm">
               <span className="leading-none mr-1">
-                Audit this site's code on GitHub
+                Audit this site&apos;s code on GitHub
               </span>
               <svg
                 data-slot="icon"
