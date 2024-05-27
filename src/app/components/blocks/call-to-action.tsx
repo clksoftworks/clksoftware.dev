@@ -18,11 +18,22 @@ const CallToAction = ({ className }: { className: string | undefined }) => {
           </p>
           <hr className="my-6 border-[#171717] border mx-4" />
           <p className="mb-6 font-business leading-normal text-left">
-            CLK Software can create custom solutions end-to-end, or help you
-            enhance and maintain your existing systems. Discover how your
-            business can leverage the web to it&apos;s complete potential, reach out
-            to us today.
+            CLK Software creates custom solutions end-to-end, and helps our
+            clients enhance and maintain existing systems. Discover how your
+            business can leverage the web to its complete potential &mdash;
+            reach out to us today.
           </p>
+          <a
+            href="#contact"
+            className="group border-black border-2 text-[#171717] px-5 py-2 font-sans uppercase bg-[#C38558] block text-center my-8"
+          >
+            <InViewClass classNameWhenInView="animate-jump">
+              <span className="group-hover:!animate-wiggle inline-block">
+                Get in touch now!
+              </span>
+            </InViewClass>
+          </a>
+
           <a
             href="https://github.com/clksoftworks/clksoftware.dev"
             target="_blank"
@@ -61,16 +72,6 @@ const CallToAction = ({ className }: { className: string | undefined }) => {
                 ></path>
               </svg>
             </span>
-          </a>
-          <a
-            href="#contact"
-            className="group border-black border-2 text-[#171717] px-5 py-2 font-sans uppercase bg-[#C38558] block text-center mt-8"
-          >
-            <InViewClass classNameWhenInView="animate-jump">
-              <span className="group-hover:!animate-wiggle inline-block">
-                Get in touch now!
-              </span>
-            </InViewClass>
           </a>
         </div>
       </div>

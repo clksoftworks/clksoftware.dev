@@ -12,15 +12,15 @@ const Hero = ({ className }: { className: string }) => {
           </h1>
           <div className="text-base font-business leading-normal mb-6">
             <p className="mb-2">
-              A doggedly <em>user-focused</em> web software engineering outfit with
-              decades of professional experience.
+              A client-focused web software engineering outfit with decades of
+              professional experience.
             </p>
             <p>
               We architect and execute web apps, ecommerce platforms, serverless
               functions, apis, bots, websites, and more — all guided by{" "}
               <em>your business vision</em>.
             </p>
-          </div>          
+          </div>
         </div>
         <div className="md:col-span-5 justify-center md:justify-start order-1 hidden md:flex">
           <HeroJourney />
