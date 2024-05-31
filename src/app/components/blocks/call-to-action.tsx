@@ -4,13 +4,13 @@ import CallToActionJourney from "./journey/call-to-action-journey";
 const CallToAction = ({ className }: { className: string | undefined }) => {
   return (
     <section
-      className={`${className} relative bg-[#292E27] border-2 border-[#171717]`}
+      className={`${className} relative bg-[#292E27] md:bg-transparent border-2 border-[#171717] md:border-none`}
     >
       <div className="grid md:grid-cols-12 gap-4 md:gap-16 items-center max-w-md md:max-w-full mx-auto">
-        <div className="hidden row-span-full col-span-12 col-start-1 col-end-12 bg-[#384136] md:flex">
+        <div className="hidden row-span-full col-span-12 col-start-1 col-end-12 md:flex md:col-span-5">
           <CallToActionJourney />
         </div>
-        <div className="px-6 row-span-full col-span-12 col-start-1 col-end-12 md:col-span-7 md:px-0 py-16 md:bg-[#384136]">
+        <div className="px-6 row-span-full col-span-12 col-start-1 col-end-12 md:col-span-7 md:px-8 py-16 md:bg-[#292E27] md:mr-4">
           <p className="text-2xl md:text-xl font-bold mb-4 font-business leading-normal">
             Gain the{" "}
             <span className="font-light text-3xl font-sans">CONFIDENCE</span> to
