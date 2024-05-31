@@ -1,0 +1,6 @@
+name = "clksoftware"
+
+[[d1_databases]]
+binding = "DB" # access using env.{binding}
+database_name = "CHANGE_ME"
+database_id = "CHANGE_ME"
