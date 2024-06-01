@@ -7,7 +7,6 @@ import CallToAction from "./components/blocks/call-to-action";
 import FinishJourney from "./components/blocks/journey/finish-journey";
 import ContactInformation from "./components/blocks/contact-information";
 import Header from "./components/header";
-import SessionService from "./services/session-service";
 
 export const metadata: Metadata = {
   title:
@@ -18,10 +17,7 @@ export const metadata: Metadata = {
     and prototyping, ensuring optimal outcomes for your business.`,
 };
 
-export default async function Home() {
-  "use edge";
-  const session = await SessionService.getSession();
-
+export default function Home() {
   return (
     <main className="max-w-7xl w-full min-h-screen flex-col font-sans bg-[#384136] relative z-10 mx-auto xl:border-4 xl:border-black">
       <Header className="mb-4" />
@@ -44,5 +40,3 @@ export default async function Home() {
     </main>
   );
 }
-
-export const runtime = "edge";
