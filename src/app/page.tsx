@@ -19,18 +19,18 @@ export const metadata: Metadata = {
 };
 
 export default async function Home() {
-  'use edge'
+  "use edge";
   const session = await SessionService.getSession();
 
   return (
     <main className="max-w-7xl w-full min-h-screen flex-col font-sans bg-[#384136] relative z-10 mx-auto md:border-4 md:border-black">
-      <Header className="mb-4" />
-
       {session && (
         <div className="bg-green-500 text-white text-center p-2">
-          Welcome, {session.user[0].uuid}!
+          Welcome, {session.user[0].name}!
         </div>
       )}
+
+      <Header className="mb-4" />
 
       <Hero className="mb-16" />
 
