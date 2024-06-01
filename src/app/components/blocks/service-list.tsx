@@ -8,7 +8,7 @@ const ServiceList = ({ className }: { className: string | undefined }) => {
       id="services"
       className={`${className} relative grid grid-cols-12 items-center`}
     >
-      <div className="row-span-full grid-start-1 col-span-12 md:ml-40 px-5 max-w-md md:max-w-full mx-auto">
+      <div className="row-span-full grid-start-1 col-span-12 md:col-span-8 px-5 max-w-md md:max-w-full mx-auto md:px-8">
         <h2 className="text-3xl uppercase mb-8">
           FULL-SERVICE <span className="underline">SDLC</span>{" "}
           <span className="text-[#DFA479]">&</span> BEYOND
@@ -45,9 +45,9 @@ const ServiceList = ({ className }: { className: string | undefined }) => {
               />
             </svg>
             <div>
-              We <span className="text-[#DFA479] font-bold">build</span> modern and
-              performant applications, following industry best practices, with
-              usability and maintainability top of mind.
+              We <span className="text-[#DFA479] font-bold">build</span> modern
+              and performant applications, following industry best practices,
+              with usability and maintainability top of mind.
             </div>
           </li>
           <li className="flex space-x-4 items-start">
@@ -65,8 +65,8 @@ const ServiceList = ({ className }: { className: string | undefined }) => {
             <div>
               We help clients diagnose and resolve issues with their existing
               systems, to improve and{" "}
-              <span className="text-[#DFA479] font-bold">maintain</span> the health and
-              integrity of their applications and data.
+              <span className="text-[#DFA479] font-bold">maintain</span> the
+              health and integrity of their applications and data.
             </div>
           </li>
           <li className="flex space-x-4 items-start">
@@ -82,7 +82,8 @@ const ServiceList = ({ className }: { className: string | undefined }) => {
               />
             </svg>
             <div>
-              We identify <span className="text-[#DFA479] font-bold">strategic</span> web
+              We identify{" "}
+              <span className="text-[#DFA479] font-bold">strategic</span> web
               solutions for our clients, aimed at optimizing their business
               processes, elevating customer experiences, and broadening
               outreach.

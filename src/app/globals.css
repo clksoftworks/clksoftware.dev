@@ -50,8 +50,12 @@ body {
   }
 }
 
+#about .path {
+  height: 100%;
+}
+
 .path .animated {
-  animation: dash 3s linear forwards;
+  animation: dash 1s linear forwards;
 }
 
 .grid-paper-pattern {

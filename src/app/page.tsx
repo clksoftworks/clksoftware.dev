@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="max-w-5xl w-full min-h-screen flex-col font-sans bg-[#384136] relative z-10 mx-auto md:border-4 md:border-black">
+    <main className="max-w-7xl w-full min-h-screen flex-col font-sans bg-[#384136] relative z-10 mx-auto xl:border-4 xl:border-black">
       <Header className="mb-4" />
 
       <Hero className="mb-16" />
@@ -30,7 +30,9 @@ export default function Home() {
 
       <ComparisonPanel className="mb-0 md:mb-24" />
 
-      <FinishJourney className="mb-24 pl-8 hidden md:block" />
+      <div className="relative w-full aspect-video">
+        <FinishJourney className="hidden md:block" />
+      </div>
 
       <ContactInformation className="py-16" />
 

@@ -6,12 +6,14 @@ interface InViewClassProps {
   children: React.ReactNode;
   classNameWhenInView: string;
   stayOff?: boolean;
+  threshold?: number;
 }
 
 const InViewClass: React.FC<InViewClassProps> = ({
   children,
   classNameWhenInView,
   stayOff = true,
+  threshold = 1.0,
 }) => {
   const targetRef = useRef<HTMLDivElement>(null);
 
@@ -26,7 +28,7 @@ const InViewClass: React.FC<InViewClassProps> = ({
           }
         }
       },
-      { threshold: 0.5 } // Adjust threshold as needed
+      { threshold: threshold } // Adjust threshold as needed
     );
 
     if (targetRef.current) {
