@@ -5,7 +5,7 @@ export async function GET(request: NextRequest) {
     `<?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <Dial>
-            <Number>+13165559999</Number>
+            <Number>+13166657496</Number>
         </Dial>
     </Response>
     `,
