@@ -23,7 +23,7 @@ export default async function Home() {
   const session = await SessionService.getSession();
 
   return (
-    <main className="max-w-7xl w-full min-h-screen flex-col font-sans bg-[#384136] relative z-10 mx-auto xl:border-4 xl:border-black">
+    <main className="max-w-5xl w-full min-h-screen flex-col font-sans bg-[#384136] relative z-10 mx-auto xl:border-4 xl:border-black">
       <Header className="mb-4" />
 
       <Hero className="mb-16" />
@@ -34,7 +34,7 @@ export default async function Home() {
 
       <ComparisonPanel className="mb-0 md:mb-24" />
 
-      <div className="relative w-full aspect-video">
+      <div className="relative w-full md:aspect-video">
         <FinishJourney className="hidden md:block" />
       </div>
 

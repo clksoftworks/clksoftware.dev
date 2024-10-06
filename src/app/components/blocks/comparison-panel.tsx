@@ -11,7 +11,7 @@ const ComparisonPanel = ({ className }: { className: string }) => {
       <div className="hidden xl:block md:col-span-4">
         <ComparisonPanelJourney />
       </div>
-      <div className="shadow-lg bg-[#EFE8DB] md:col-span-8 row-span-full col-start-3 md:border-black md:border-2 text-[#171717] py-16 px-5 md:px-24 z-10 relative font-business leading-normal mx-auto max-w-md md:max-w-full">
+      <div className="shadow-lg bg-[#EFE8DB] md:border-black md:border-2 text-[#171717] z-10 relative font-business leading-normal row-span-full grid-start-1 col-span-12 md:col-span-8 px-5 max-w-md md:max-w-full mx-auto md:px-8 py-12">
         <h2 className="text-3xl uppercase mb-8 ml-6 font-business font-bold">
           What sets us <span className="underline">apart</span>
         </h2>
