@@ -29,7 +29,7 @@ const CallToAction = ({ className }: { className: string | undefined }) => {
           >
             <InViewClass classNameWhenInView="animate-jump">
               <span className="group-hover:!animate-wiggle inline-block">
-                Let's Talk About Your Project
+                Let&apos;s Talk About Your Project
               </span>
             </InViewClass>
           </a>
