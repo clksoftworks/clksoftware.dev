@@ -16,9 +16,9 @@ const Hero = ({ className }: { className: string }) => {
               professional experience.
             </p>
             <p>
-              We architect and execute web apps, ecommerce platforms, serverless
-              functions, apis, bots, websites, and more — all guided by{" "}
-              <em>your business vision</em>.
+              We partner with business owners to build, fix, 
+              and scale custom web applications, ecommerce platforms, and APIs. 
+              Nearly two decades of senior-level experience, delivered without the bloat of a large agency.
             </p>
           </div>
         </div>
