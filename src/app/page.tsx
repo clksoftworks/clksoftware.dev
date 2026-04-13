@@ -5,6 +5,7 @@ import ServiceList from "./components/blocks/service-list";
 import ComparisonPanel from "./components/blocks/comparison-panel";
 import CallToAction from "./components/blocks/call-to-action";
 import FinishJourney from "./components/blocks/journey/finish-journey";
+import PortfolioSection from "./components/blocks/portfolio-section";
 import ContactInformation from "./components/blocks/contact-information";
 import Header from "./components/header";
 import SessionService from "./services/session-service";
@@ -37,6 +38,8 @@ export default async function Home() {
       <div className="relative w-full md:aspect-video">
         <FinishJourney className="hidden md:block" />
       </div>
+
+      <PortfolioSection className="py-16" />
 
       <ContactInformation className="py-16" />
 

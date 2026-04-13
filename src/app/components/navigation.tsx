@@ -18,6 +18,11 @@ export default function Navigation() {
           </a>
         </li>
         <li>
+          <a href="#portfolio" className="animate-underline-from-center">
+            Portfolio
+          </a>
+        </li>
+        <li>
           <a href="#contact" className="animate-underline-from-center">
             Contact
           </a>
