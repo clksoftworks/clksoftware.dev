@@ -7,3 +7,5 @@ AUTH0_ISSUER_BASE_URL=""
 AUTH0_CLIENT_ID=""
 # Your Auth0 application's Client Secret
 AUTH0_CLIENT_SECRET=""
+# Resend API key for contact form email delivery (https://resend.com/api-keys)
+RESEND_API_KEY=""

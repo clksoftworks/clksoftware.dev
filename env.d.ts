@@ -4,5 +4,6 @@ interface CloudflareEnv {
   // a way make sure that you have installed the package
   // as a dev dependency and you have added it to your
   //`tsconfig.json` file under `compilerOptions.types`.
-  DB: D1Database
+  DB: D1Database;
+  RESEND_API_KEY: string;
 }

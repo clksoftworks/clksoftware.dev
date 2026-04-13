@@ -13,10 +13,12 @@
   },
   "dependencies": {
     "@auth0/nextjs-auth0": "^3.5.0",
+    "@react-email/render": "^2.0.6",
     "gsap": "^3.12.5",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
+    "resend": "~6.10.0",
     "sharp": "^0.33.3",
     "tailwindcss-animated": "^1.0.1",
     "usehooks-ts": "^3.1.0"
