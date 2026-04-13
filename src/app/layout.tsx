@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Cabin } from "next/font/google";
 import Image from "next/image";
-import backgroundPicture from "../../public/background.png";
+import backgroundPicture from "../../public/background.webp";
 import "./globals.css";
 
 const fontBusiness = Cabin({
@@ -53,6 +53,9 @@ export default async function RootLayout({
           src={backgroundPicture}
           alt=""
           fill
+          sizes="100vw"
+          quality={80}
+          priority
           className="z-[1] object-cover"
           aria-hidden="true"
         />
