@@ -10,17 +10,39 @@ import ContactInformation from "./components/blocks/contact-information";
 import Header from "./components/header";
 import SessionService from "./services/session-service";
 
+const SITE_URL = "https://clksoftware.dev";
+const PAGE_TITLE = "CLK Software — Custom Web Software Development";
+const PAGE_DESCRIPTION =
+  "CLK Software builds, fixes, and scales custom web applications, ecommerce platforms, and APIs. Nearly two decades of senior-level engineering experience, delivered without the overhead of a large agency.";
+
 export const metadata: Metadata = {
-  title:
-    "Transform Your Business with CLK Software: Expert Development, Consulting, and Prototyping Services",
-  description: `Unlock your business potential with CLK Software LLC. Explore our expert development, 
-    consulting, and prototyping services tailored to elevate your projects to new heights. 
-    Trust our experienced team to guide you through technology stack selection, system design, 
-    and prototyping, ensuring optimal outcomes for your business.`,
+  title: PAGE_TITLE,
+  description: PAGE_DESCRIPTION,
+  metadataBase: new URL(SITE_URL),
+  openGraph: {
+    type: "website",
+    url: SITE_URL,
+    title: PAGE_TITLE,
+    description: PAGE_DESCRIPTION,
+    siteName: "CLK Software",
+    images: [
+      {
+        url: "/hero.png",
+        width: 1403,
+        height: 394,
+        alt: "CLK Software — Custom Web Software Development",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: PAGE_TITLE,
+    description: PAGE_DESCRIPTION,
+    images: ["/hero.png"],
+  },
 };
 
 export default async function Home() {
-  "use edge";
   const session = await SessionService.getSession();
 
   return (

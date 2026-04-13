@@ -1,4 +1,4 @@
-export default function americanHeartIcon() {
+export default function AmericanHeartIcon() {
   return (
     <svg className="w-8 h-8" fill="none" viewBox="0 0 44 44">
       <mask
