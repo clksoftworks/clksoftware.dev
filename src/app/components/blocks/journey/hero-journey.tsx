@@ -10,6 +10,8 @@ export default function HeroJourney() {
         viewBox="0 0 371 247"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+        focusable="false"
       >
         <mask id="upcoming">
           <path

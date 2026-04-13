@@ -10,6 +10,8 @@ export default function comparisonPanelJourney() {
         viewBox="265 -200 639 826"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+        focusable="false"
       >
         <mask id="comparison">
           <path

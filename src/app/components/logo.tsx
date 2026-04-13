@@ -8,11 +8,11 @@ export default function Logo() {
     >
       <Logomark />
 
-      <h1 className="text-2xl font-display text-left">
+      <p className="text-2xl font-display text-left">
         CLK
         <br />
         Software
-      </h1>
+      </p>
     </div>
   );
 }

@@ -9,10 +9,10 @@ const ContactInformation = ({ className }: { className: string }) => {
   const phoneTel = "+13166657496";
 
   return (
-    <div id="contact" className={`${className} px-8 bg-[#212520]`}>
+    <section id="contact" aria-labelledby="contact-heading" className={`${className} px-8 bg-[#212520]`}>
       <div className="max-w-3xl mx-auto">
         {/* Heading */}
-        <p className="text-3xl mb-12 text-center">GET IN TOUCH</p>
+        <h2 id="contact-heading" className="text-3xl mb-12 text-center">GET IN TOUCH</h2>
 
         {/* Two-column layout on md+: form left, contact details right */}
         <div className="flex flex-col md:flex-row gap-12 md:gap-16 items-start">
@@ -80,7 +80,7 @@ const ContactInformation = ({ className }: { className: string }) => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

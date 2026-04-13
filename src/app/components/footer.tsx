@@ -27,12 +27,15 @@ const Footer = async ({ className }: { className: string }) => {
       <a
         href="https://github.com/clksoftworks/clksoftware.dev"
         target="_blank"
+        rel="noopener noreferrer"
         className="text-base font-business flex-inline items-center space-x-2 rounded-lg p-2 z-10 mt-0 block"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="w-5 inline-block"
           viewBox="0 0 98 96"
+          aria-hidden="true"
+          focusable="false"
         >
           <path
             fillRule="evenodd"

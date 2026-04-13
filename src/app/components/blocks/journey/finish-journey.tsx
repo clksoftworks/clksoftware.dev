@@ -11,6 +11,8 @@ const FinishJourney = ({ className }: { className: string }) => {
           viewBox="0 0 518 216"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          focusable="false"
         >
           <path
             d="M5.00586 158C11.39 168.205 19.2057 175.864 27.0481 184.51"

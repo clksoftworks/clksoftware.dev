@@ -10,6 +10,8 @@ export default function serviceListJourney() {
         viewBox="0 50 370 557"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+        focusable="false"
       >
         <mask id="serviceList">
           <path

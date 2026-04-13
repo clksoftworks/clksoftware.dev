@@ -20,7 +20,7 @@ const projects = [
 
 const ExternalLinkIcon = () => (
   <svg
-    className="inline-block ml-1.5 w-3.5 h-3.5 mb-0.5 text-[#C38558]"
+    className="inline-block ml-1.5 w-3.5 h-3.5 mb-0.5 text-[#DFA479]"
     aria-hidden="true"
     fill="none"
     strokeWidth="2"
@@ -61,7 +61,7 @@ const PortfolioSection = ({ className }: { className?: string }) => {
                     href={project.link.href}
                     target={project.link.external ? "_blank" : undefined}
                     rel={project.link.external ? "noopener noreferrer" : undefined}
-                    className="inline-flex items-center font-business text-xs tracking-widest text-[#C38558] uppercase hover:text-[#DFA479] transition-colors duration-200 shrink-0"
+                    className="inline-flex items-center font-business text-xs tracking-widest text-[#DFA479] uppercase hover:text-[#EFE8DB] transition-colors duration-200 shrink-0"
                   >
                     {project.link.label}
                     {project.link.external && <ExternalLinkIcon />}
@@ -104,7 +104,7 @@ const PortfolioSection = ({ className }: { className?: string }) => {
                 {project.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="font-business text-xs tracking-widest uppercase px-2.5 py-1 border border-[#C38558]/40 text-[#C38558]"
+                    className="font-business text-xs tracking-widest uppercase px-2.5 py-1 border border-[#DFA479]/40 text-[#DFA479]"
                   >
                     {tag}
                   </span>

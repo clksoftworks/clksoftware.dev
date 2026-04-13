@@ -1,6 +1,6 @@
 export default function AmericanHeartIcon() {
   return (
-    <svg className="w-8 h-8" fill="none" viewBox="0 0 44 44">
+    <svg className="w-8 h-8" fill="none" viewBox="0 0 44 44" aria-hidden="true" focusable="false">
       <mask
         id="mask0_92_116"
         style={{ maskType: "alpha" }}
