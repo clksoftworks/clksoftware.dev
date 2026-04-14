@@ -1,0 +1,62 @@
+The worst moment in a contract engagement isn't when something breaks. It's when the contractor disappears and nobody knows how to pick up where they left off. I've been on both sides of this — inheriting projects with no documentation and no context, and delivering projects where the handoff was the most important deliverable.
+
+Here's what a good technical handoff actually looks like, and what you should expect from any contractor or agency you work with.
+
+## The Repository Should Speak for Itself
+
+The single most important handoff artifact is a clean, well-organized codebase. Not clean in the "rewritten three times" sense — clean in the "a competent developer can open this and understand what's happening" sense.
+
+That means:
+
+- **A README that actually helps.** Not a boilerplate template. A README that explains how to set up the development environment, how to run the application locally, how to deploy, and where to find the important things. If a new developer can go from `git clone` to a running application in under 30 minutes, the README is doing its job.
+- **Consistent patterns.** If the API routes follow a convention, every route should follow that convention. If components are organized by feature, every feature should be organized the same way. Consistency is more valuable than cleverness.
+- **Meaningful commit history.** A commit history that reads like a story of what was built and why is worth more than any external document. "Fix auth redirect on mobile Safari" tells the next developer exactly what happened and why. "Fix bug" tells them nothing.
+
+## Environment and Deployment Documentation
+
+This is where most handoffs fall apart. The code works on the contractor's machine, but nobody documented:
+
+- What environment variables are required and what they do
+- How the production deployment pipeline works
+- What services the application depends on (databases, APIs, email providers, CDNs)
+- How to access those services and who owns the accounts
+- What happens when the SSL certificate expires, the domain needs renewal, or the hosting bill comes due
+
+A good handoff includes an **environment map** — a simple document that lists every external dependency, how to access it, and who's responsible for it going forward. This takes an hour to write and saves weeks of detective work later.
+
+## Access and Credentials
+
+Before the engagement ends, the client should have:
+
+- **Admin access to every service** the application depends on. Not shared credentials through the contractor's account — the client's own accounts with full ownership.
+- **Repository ownership.** The code should live in the client's GitHub (or equivalent) organization, not the contractor's personal account.
+- **Domain and DNS control.** The client should be the registered owner of their domain with direct access to DNS settings.
+- **Deployment credentials.** The client or their team should be able to deploy without the contractor's involvement.
+
+If a contractor pushes back on transferring full access, that's a red flag. The client is paying for the work — they should own every piece of it.
+
+## Knowledge Transfer, Not Just Code Transfer
+
+A handoff meeting — even a short one — is worth more than an extra page of documentation. Walking through the codebase live, explaining the decisions that aren't obvious from the code, and answering questions in real time transfers context that documents can't capture.
+
+The most valuable things to cover:
+
+- **Why decisions were made.** "We used SQLite here instead of Postgres because the hosting platform provides it as a managed service at no extra cost" is the kind of context that prevents the next developer from ripping it out and introducing a problem.
+- **What's not finished.** Every project has rough edges and known compromises. Being upfront about them — "the image upload doesn't handle files over 10MB gracefully" — lets the client prioritize future work intelligently.
+- **What to watch for.** If there's a background job that needs monitoring, or an API rate limit that could become a problem at scale, or a dependency that's approaching end-of-life — flag it.
+
+## The Maintenance Window
+
+Good contractors offer a maintenance window after handoff — typically 2-4 weeks where they're available to answer questions, fix issues that surface in production, and help the client's team get up to speed. This isn't free ongoing support. It's a recognition that the first few weeks after a handoff are when the most questions arise, and a brief availability window prevents small issues from becoming big ones.
+
+## What to Watch For
+
+If your contractor delivers the code and vanishes, or if asking for documentation is met with resistance, or if you discover after the fact that critical accounts are tied to someone else's email address — these are signs of a bad handoff, and they're preventable.
+
+Before you sign a contract, ask: "What does the handoff look like?" A good contractor will have a clear answer, because they've thought about it before you asked.
+
+## The Standard I Hold Myself To
+
+At CLK Software, the handoff is part of the engagement from day one — not an afterthought tacked on at the end. Every project ships with a clean repository, complete environment documentation, transferred access, and a walkthrough. The goal is simple: when I'm done, you shouldn't need me. And if you do need help later, picking up where we left off should be effortless.
+
+If that's the kind of engagement you're looking for, [let's talk](/#contact).

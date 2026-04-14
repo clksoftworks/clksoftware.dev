@@ -1,0 +1,49 @@
+Every few months, a client reaches out with the same question: "Should we fix what we have, or start over?" It's one of the most consequential decisions a business can make about its technology, and it's rarely as straightforward as it seems.
+
+After nearly two decades of working with web applications in various states of disrepair, I've developed a framework for thinking through this decision. Here's what I look for.
+
+## The Case for Rescue
+
+A rescue — stabilizing and improving an existing application — is almost always the right starting point. The code that's running in production today, however ugly it might be, has already survived contact with real users. It handles edge cases that no specification ever documented. It carries institutional knowledge in its logic, even if that knowledge is poorly expressed.
+
+Rescue makes sense when:
+
+- **The core architecture is sound.** The framework is maintained, the database schema is reasonable, and the deployment pipeline works. The problems are in the application layer — bugs, performance issues, missing features, or accumulated technical debt.
+- **The business can't afford downtime.** A rebuild takes months. A rescue can deliver improvements in days or weeks. If the application is generating revenue or serving customers, continuity matters.
+- **The team that built it is gone.** This sounds counterintuitive, but when the original developers have left, the existing codebase is the most complete documentation of what the system does. Rebuilding from a specification that doesn't exist is riskier than fixing what's there.
+- **The problems are localized.** If performance issues trace back to a few bad queries, or bugs cluster in one module, targeted work delivers disproportionate results.
+
+## The Case for Rebuild
+
+Sometimes a rebuild genuinely is the right call. But the bar should be high, because rebuilds carry risks that are easy to underestimate.
+
+Rebuild makes sense when:
+
+- **The technology is end-of-life.** If the framework or language has been deprecated, security patches have stopped, and the hosting platform is being decommissioned, the clock is ticking regardless. A rescue just delays the inevitable.
+- **The architecture fundamentally doesn't fit.** A monolithic PHP application that needs to become a real-time collaborative platform isn't going to get there through incremental changes. When the gap between what the system is and what it needs to be is architectural, not just functional, a rebuild may be warranted.
+- **The codebase actively resists change.** If every bug fix introduces two new bugs, if there are no tests and the code is too tangled to add them, if deployments require a manual checklist and a prayer — the cost of continued rescue may exceed the cost of rebuilding.
+- **You have a clear specification.** This is the most overlooked prerequisite. A rebuild without a detailed, validated specification is just a second attempt at making the same mistakes. The specification doesn't have to be a formal document, but someone needs to know exactly what the system does today and what it should do tomorrow.
+
+## The Questions I Ask
+
+When a client brings me an application they're struggling with, I start with these questions:
+
+**What's actually broken?** Not what feels broken — what specifically fails, performs poorly, or blocks the business? A focused diagnosis often reveals that the problems are more contained than they appear.
+
+**What does success look like in 90 days?** This forces prioritization. If the answer is "we need the checkout flow to stop crashing and mobile performance to improve," that's a rescue. If the answer is "we need to support 10x the traffic on a completely different platform," that might be a rebuild.
+
+**What's the cost of doing nothing?** Sometimes the honest answer is that the application is fine for now and the energy is better spent elsewhere. Not every imperfect system needs intervention.
+
+**Who will maintain this after I'm done?** A rescue preserves the existing team's familiarity with the codebase. A rebuild requires the team to learn a new system. If the team is small or non-technical, this matters more than most people realize.
+
+## The Middle Path
+
+In practice, the best approach is often neither a full rescue nor a full rebuild, but a **strangler fig pattern** — incrementally replacing parts of the system while keeping the whole thing running. Replace the authentication layer. Migrate one API endpoint at a time. Rebuild the frontend while the backend continues to serve.
+
+This approach reduces risk, delivers value continuously, and lets you validate architectural decisions before committing to them fully. It's slower than a clean rebuild, but it's also far less likely to fail.
+
+## The Bottom Line
+
+The question isn't really "rescue or rebuild." It's "what's the fastest path to a system that serves the business well, with the least risk along the way?" Sometimes that means fixing what you have. Sometimes it means starting fresh. Most often, it means something in between.
+
+If you're facing this decision and want a second opinion, [reach out](/). I'm happy to look at what you have and give you an honest assessment — no commitment required.
