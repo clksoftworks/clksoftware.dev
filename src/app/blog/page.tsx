@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "Blog",
   description:
     "Technical insights, project strategy, and lessons from nearly two decades of building custom web applications.",
+  alternates: {
+    canonical: "https://clksoftware.dev/blog",
+  },
   openGraph: {
     title: "Blog | CLK Software",
     description:

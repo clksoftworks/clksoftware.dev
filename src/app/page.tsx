@@ -5,7 +5,11 @@ import ServiceList from "./components/blocks/service-list";
 import ComparisonPanel from "./components/blocks/comparison-panel";
 import CallToAction from "./components/blocks/call-to-action";
 import FinishJourney from "./components/blocks/journey/finish-journey";
+import Testimonials from "./components/blocks/testimonials";
+import TestimonialsJourney from "./components/blocks/journey/testimonials-journey";
 import PortfolioSection from "./components/blocks/portfolio-section";
+import FAQ from "./components/blocks/faq";
+import FaqJourney from "./components/blocks/journey/faq-journey";
 import ContactInformation from "./components/blocks/contact-information";
 import Header from "./components/header";
 import SessionService from "./services/session-service";
@@ -19,6 +23,9 @@ export const metadata: Metadata = {
   title: PAGE_TITLE,
   description: PAGE_DESCRIPTION,
   metadataBase: new URL(SITE_URL),
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     type: "website",
     url: SITE_URL,
@@ -55,6 +62,12 @@ export default async function Home() {
 
       <ServiceList className="mb-16" />
 
+      <Testimonials />
+
+      <div className="relative w-full hidden md:block md:aspect-video">
+        <TestimonialsJourney />
+      </div>
+
       <ComparisonPanel className="mb-0 md:mb-24" />
 
       <div className="relative w-full md:aspect-video">
@@ -62,6 +75,12 @@ export default async function Home() {
       </div>
 
       <PortfolioSection className="py-16" />
+
+      <FAQ className="py-16" />
+
+      <div className="relative w-full hidden md:block md:aspect-video">
+        <FaqJourney />
+      </div>
 
       <ContactInformation className="py-16" />
 

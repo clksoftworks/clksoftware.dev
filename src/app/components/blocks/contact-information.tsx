@@ -14,6 +14,22 @@ const ContactInformation = ({ className }: { className: string }) => {
         {/* Heading */}
         <h2 id="contact-heading" className="text-3xl mb-12 text-center">GET IN TOUCH</h2>
 
+        {/* Scheduling CTA */}
+        <div className="mb-8 text-center">
+          <p className="font-business text-sm text-[rgb(239,232,219)]/70 mb-3">
+            Prefer a quick conversation?
+          </p>
+          {/* TODO (ALPHA-92): Replace PLACEHOLDER with your Calendly URL once account is set up */}
+          <a
+            href="https://calendly.com/PLACEHOLDER"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block rounded border-2 border-[#C38558] px-6 py-2.5 font-business text-sm tracking-widest text-[#C38558] uppercase hover:bg-[#C38558]/10 transition-colors duration-200"
+          >
+            Book a 30-min call
+          </a>
+        </div>
+
         {/* Two-column layout on md+: form left, contact details right */}
         <div className="flex flex-col md:flex-row gap-12 md:gap-16 items-start">
           {/* Form column */}

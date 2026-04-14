@@ -83,6 +83,15 @@ const ServiceList = ({ className }: { className: string | undefined }) => {
             </li>
           ))}
         </ul>
+        {/* Secondary CTA */}
+        <div className="mt-12">
+          <a
+            href="#portfolio"
+            className="inline-block text-sm uppercase tracking-widest text-[#C38558] hover:text-[#EFE8DB] transition-colors duration-200"
+          >
+            See how we've delivered these &rarr;
+          </a>
+        </div>
       </div>
       <div className="col-span-4 justify-end md:flex hidden">
         <ServiceListJourney />

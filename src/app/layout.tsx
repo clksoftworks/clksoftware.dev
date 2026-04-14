@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import { Cabin } from "next/font/google";
 import Image from "next/image";
 import backgroundPicture from "../../public/background.webp";
+import StructuredData from "./components/structured-data";
 import "./globals.css";
 
 const fontBusiness = Cabin({
@@ -35,6 +36,11 @@ export const metadata: Metadata = {
   },
   description:
     "CLK Software builds, fixes, and scales custom web applications, ecommerce platforms, and APIs. Nearly two decades of senior-level experience without the overhead of a large agency.",
+  verification: {
+    // TODO: Replace with your Google Search Console verification token
+    // Set GOOGLE_SITE_VERIFICATION in .dev.vars / Cloudflare Pages env vars
+    google: process.env.GOOGLE_SITE_VERIFICATION ?? "",
+  },
 };
 
 export default async function RootLayout({
@@ -47,6 +53,7 @@ export default async function RootLayout({
       <body
         className={`${fontSans.variable} ${fontDisplay.variable} ${fontSignature.variable} ${fontBusiness.variable}`}
       >
+        <StructuredData />
         {children}
 
         <Image

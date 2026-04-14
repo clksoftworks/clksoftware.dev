@@ -28,6 +28,9 @@ export function generateMetadata({ params }: Props): Metadata {
   return {
     title: post.title,
     description: post.description,
+    alternates: {
+      canonical: `https://clksoftware.dev/blog/${post.slug}`,
+    },
     openGraph: {
       title: post.title,
       description: post.description,
