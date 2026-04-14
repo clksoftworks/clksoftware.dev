@@ -89,7 +89,7 @@ const ServiceList = ({ className }: { className: string | undefined }) => {
             href="#portfolio"
             className="inline-block text-sm uppercase tracking-widest text-[#C38558] hover:text-[#EFE8DB] transition-colors duration-200"
           >
-            See how we've delivered these &rarr;
+            See how we&apos;ve delivered these &rarr;
           </a>
         </div>
       </div>
